@@ -1,0 +1,43 @@
+
+a {
+  text-decoration: none;
+}
+li {
+  color: var(--gray-color);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 17px;
+  list-style-type: none;
+  margin: 30px 0px;
+  transition: 0.5s all;
+  cursor: pointer;
+  &:hover {
+    color: var(--orange-color);
+  }
+}
+.active {
+  color: var(--orange-color);
+}
+
+.contact {
+  margin: 75px 0px;
+  display: flex;
+  align-items: center;
+  .contactPhoneLogo {
+    font-size: 40px;
+    color: var(--orange-color);
+  }
+  .contactText {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+  }
+  .contactReserve {
+    color: var(--gray-color);
+    font-size: 18px;
+  }
+  .contactPhone {
+    color: var(--orange-color);
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* global variables*/
+:root {
+  --gray-color: #878787;
+  --orange-color: #b19a63;
+  --sidebar-width: 20.9%;
+}
