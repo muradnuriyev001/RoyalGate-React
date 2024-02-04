@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div className={c.homePage}>
       <HomePageBanner />
-      <HomePageFirstSection/>
+      <HomePageFirstSection />
     </div>
   );
 };
