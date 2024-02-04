@@ -1,12 +1,9 @@
-@font-face {
-  font-family: royalFont;
-  src: url("/src/assets/fonts/GildaDisplay/GildaDisplay-Regular.ttf");
-}
-
 .homePageBanner {
   background-image: url("/src/assets/img/homePageBanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 900px;
   display: flex;
   align-items: center;
   justify-content: center;

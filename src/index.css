@@ -5,8 +5,33 @@
 }
 
 /* global variables*/
+@font-face {
+  font-family: royalFont;
+  src: url("/src/assets/fonts/GildaDisplay/GildaDisplay-Regular.ttf");
+}
+
 :root {
   --gray-color: #878787;
   --orange-color: #b19a63;
   --sidebar-width: 20.9%;
+}
+
+/* Scrollbar settings*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--orange-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7f00;
 }
