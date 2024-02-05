@@ -44,3 +44,19 @@
     }
   }
 }
+
+/*Responsive for home page banner */
+
+@media only screen and (max-width: 500px) {
+  .bannerText {
+    .bT1 {
+      font-size: 13px !important;
+    }
+    .bT2 {
+      font-size: 30px !important;
+    }
+  }
+  .bannerButton {
+    padding: 14px 20px !important;
+  }
+}
