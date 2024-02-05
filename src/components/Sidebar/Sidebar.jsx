@@ -27,10 +27,6 @@ const Sidebar = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
-
-  useEffect(() => {
-    setIsActive(false);
   }, [location]);
 
   return (

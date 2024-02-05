@@ -23,3 +23,16 @@
     }
   }
 }
+
+/*Responsive for Not Found Page */
+
+@media only screen and (max-width: 340px) {
+  .notFound {
+    span {
+      font-size: 30px;
+    }
+    .backHome {
+      padding: 15px;
+    }
+  }
+}

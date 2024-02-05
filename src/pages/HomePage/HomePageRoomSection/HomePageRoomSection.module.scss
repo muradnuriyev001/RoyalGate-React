@@ -1,0 +1,32 @@
+.hPRoomSection {
+  background-color: #1e1e1e;
+  min-height: 900px;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hPRoomText {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif royalGate;
+  text-align: center;
+  .hPRoomText1 {
+    font-size: 20px;
+    color: var(--orange-color);
+  }
+  .hPRoomText2 {
+    font-size: 40px;
+    color: white;
+  }
+}
+
+.hPRoomCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}

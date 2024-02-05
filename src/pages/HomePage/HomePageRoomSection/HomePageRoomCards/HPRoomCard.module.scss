@@ -1,0 +1,74 @@
+.HPRoomCard {
+  height: 350px;
+  width: 250px;
+  margin: 20px 20px;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    img {
+      filter: blur(4px);
+    }
+    .HPRoomCardLayer {
+      transition: 1s all;
+    }
+    .HPRoomLayerIcons {
+      display: flex;
+      transition: 1s all;
+      .HPRoomLayerIcon {
+        font-size: 22px;
+        margin: 2px 5px;
+      }
+    }
+    .HPRoomBook {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .HPRoomLayerIcons {
+    display: none;
+  }
+
+  .HPRoomBook {
+    display: none;
+    border: 2px white solid;
+    font-family: sans-serif royalGate;
+    width: 150px;
+    margin-bottom: 190px;
+    padding: 5px;
+    &:hover {
+      border-color: var(--orange-color);
+    }
+    .HPRoomBookIcon {
+      font-size: 30px;
+    }
+  }
+
+  .HPRoomCardLayer {
+    position: absolute;
+    font-family: sans-serif royalGate;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 15px;
+    bottom: 0 !important;
+    color: white;
+    z-index: 1;
+    height: 350px;
+    width: 250px;
+    .HPRoomLayerText1 {
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+    .HPRoomLayerText2 {
+      font-size: 33px;
+      color: var(--orange-color);
+      letter-spacing: 3px;
+    }
+  }
+  img {
+    height: 350px;
+    width: 250px;
+    position: absolute;
+  }
+}
