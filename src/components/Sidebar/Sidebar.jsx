@@ -1,7 +1,7 @@
 import c from "./Sidebar.module.scss";
 
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import logoSidebar from "../../assets/img/logoSidebar.png";
 import SidebarNav from "./SidebarNav/SidebarNav";
@@ -10,6 +10,7 @@ import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(false);
+  const location = useLocation();
 
   const toggleIsActive = () => {
     setIsActive(!isActive);
@@ -27,6 +28,10 @@ const Sidebar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    setIsActive(false);
+  }, [location]);
 
   return (
     <>
