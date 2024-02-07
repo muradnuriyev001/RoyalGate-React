@@ -30,3 +30,10 @@
   justify-content: center;
   width: 75%;
 }
+
+/*Responsive for cards width */
+@media only screen and (max-width: 400px) {
+  .hPRoomCards {
+    width: 100%;
+  }
+}

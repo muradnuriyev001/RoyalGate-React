@@ -1,4 +1,4 @@
-import c from "./HPRoomCard.module.scss";
+import c from "./HPRoomCards.module.scss";
 import { useNavigate } from "react-router-dom";
 
 import { FaPersonSwimming, FaTaxi, FaWifi } from "react-icons/fa6";

@@ -1,0 +1,158 @@
+.footerFirstLayer {
+  background-color: #222222;
+  min-height: 400px;
+  padding: 50px 325px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif royalGate;
+}
+
+.firstLayerAbout {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  span:nth-child(1) {
+    color: var(--orange-color);
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  span:nth-child(2) {
+    color: white;
+    font-size: 13px;
+    margin: 15px 0px;
+  }
+  select {
+    width: 35%;
+    height: 30px;
+    margin: 15px 0px;
+    background-color: #282828;
+    color: white;
+    &:focus {
+      border: none;
+    }
+  }
+}
+
+.firstLayerExplore {
+  margin-top: 25px;
+  span {
+    font-size: 25px;
+    color: var(--orange-color);
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    a {
+      color: var(--gray-color);
+      margin: 5px 0px;
+      transition: 0.5s all;
+      &:hover {
+        color: var(--orange-color);
+        padding-left: 8px;
+      }
+    }
+  }
+}
+
+.firstLayerContact {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  .contactText {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    span:nth-child(1) {
+      font-size: 25px;
+      color: var(--orange-color);
+    }
+    span:nth-child(2) {
+      color: var(--gray-color);
+      font-size: 15px;
+      margin-top: 5px;
+    }
+  }
+  .contactPhone {
+    margin: 10px 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 20px;
+    }
+    svg {
+      margin-right: 10px;
+      font-size: 35px;
+    }
+  }
+  .contactIcons {
+    color: white;
+    font-size: 25px;
+    margin: 15px 0px;
+    svg {
+      margin-right: 10px;
+      cursor: pointer;
+      transition: 0.3s all;
+      &:hover {
+        scale: 1.5;
+        color: rgb(184, 148, 81);
+      }
+    }
+  }
+}
+
+.footerSecondLayer {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: sans-serif royalGate;
+  font-size: 12px;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+/*Responsive for first layer of footer */
+@media only screen and (max-width: 1750px) {
+  .footerFirstLayer {
+    padding: 50px 300px;
+  }
+}
+
+@media only screen and (max-width: 1650px) {
+  .footerFirstLayer {
+    padding: 50px 280px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .footerFirstLayer {
+    padding: 50px 260px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .footerFirstLayer {
+    padding: 50px 200px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .footerFirstLayer {
+    padding: 50px 120px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footerFirstLayer {
+    flex-direction: column;
+    align-items: start;
+    padding: 50px 120px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .footerFirstLayer {
+    padding: 50px 50px;
+  }
+}
