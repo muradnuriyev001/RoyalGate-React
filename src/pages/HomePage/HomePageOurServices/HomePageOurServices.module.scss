@@ -1,0 +1,33 @@
+.hPServices {
+  background-color: #222222;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0px;
+}
+
+.hPServicesText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-family: sans-serif royalGate;
+  span:nth-child(1) {
+    font-size: 14px;
+    color: var(--orange-color);
+  }
+  span:nth-child(2) {
+    font-size: 35px;
+    margin-top: 5px;
+  }
+}
+
+.hPServicesCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}

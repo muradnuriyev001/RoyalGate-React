@@ -1,0 +1,52 @@
+.serviceCard {
+  width: 350px;
+  background-color: transparent;
+  height: 180px;
+  border: 1px solid rgb(73, 73, 73);
+  margin: 10px 10px;
+  padding: 15px 15px;
+}
+
+.serviceIcon {
+  color: var(--orange-color);
+  font-size: 40px;
+}
+
+.serviceName {
+  color: white;
+  font-family: sans-serif royalGate;
+  font-size: 20px;
+}
+.serviceInfo {
+  color: var(--gray-color);
+  font-family: sans-serif royalGate;
+  margin-top: 5px;
+  font-size: 13px;
+  width: 75%;
+}
+
+.serviceText {
+  margin-top: 10px;
+}
+
+/*Responsive for service card */
+@media only screen and (max-width: 740px) {
+  .serviceCard {
+    width: 520px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .serviceCard {
+    width: 420px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .serviceCard {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .serviceCard {
+    width: 300px;
+  }
+}
