@@ -6,7 +6,7 @@ import RoomImage3 from "../../../assets/img/RoomSection/3.jpg";
 
 const HomePageRoomSection = () => {
   return (
-    <div className={c.hPRoomSection}>
+    <div id="RoomSection" className={c.hPRoomSection}>
       <div className={c.hPRoomText}>
         <span className={c.hPRoomText1}>ROYAL GATE LUXURY HOTEL</span>
         <span className={c.hPRoomText2}>Rooms & Suites</span>

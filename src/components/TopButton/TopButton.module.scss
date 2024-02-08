@@ -1,0 +1,27 @@
+.topButton {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 3px solid var(--orange-color);
+  cursor: pointer;
+  z-index: 3;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.4s all;
+  &:hover {
+    background-color: var(--orange-color);
+    .topIcon {
+      color: rgb(100, 99, 99);
+    }
+  }
+  .topIcon {
+    width: 35px;
+    height: 35px;
+    color: var(--orange-color);
+  }
+}

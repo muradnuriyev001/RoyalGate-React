@@ -2,15 +2,16 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import c from "./Layout.module.scss";
 import Footer from "../../components/Footer/Footer";
+import TopButton from "../../components/TopButton/TopButton";
 const Layout = () => {
   return (
     <div className={c.layout}>
       <Sidebar />
-
       <div className={c.outlet}>
         <Outlet />
-        <Footer/>
+        <Footer />
       </div>
+      <TopButton />
     </div>
   );
 };
