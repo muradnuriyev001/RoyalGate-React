@@ -1,5 +1,6 @@
 import c from "./HomePage.module.scss";
 import HomePageBanner from "./HomePageBanner/HomePageBanner";
+import HomePageBook from "./HomePageBook/HomePageBook";
 import HomePageFirstSection from "./HomePageFirstSection/HomePageFirstSection";
 import HomePageOurServices from "./HomePageOurServices/HomePageOurServices";
 import HomePageRoomSection from "./HomePageRoomSection/HomePageRoomSection";
@@ -11,6 +12,7 @@ const HomePage = () => {
       <HomePageFirstSection />
       <HomePageRoomSection/>
       <HomePageOurServices/>
+      <HomePageBook/>
     </div>
   );
 };

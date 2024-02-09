@@ -1,0 +1,253 @@
+.HPBook {
+  background-image: url("/src/assets/img/homePageBanner4.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 200px;
+}
+
+/*Book Text Section */
+.HPBookText {
+  font-family: sans-serif royalGate;
+  width: 450px;
+  .HPBookStars {
+    svg {
+      color: var(--orange-color);
+    }
+  }
+  svg {
+    color: white;
+    font-size: 45px;
+  }
+  span {
+    color: white;
+    font-size: 20px;
+  }
+}
+.HPBookContact {
+  display: flex;
+  margin: 20px 0px;
+  .HPBookContactReserve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    span:nth-child(1) {
+      font-size: 15px;
+    }
+  }
+}
+.HPBookContactFree {
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 12px;
+  }
+}
+
+/*Book Form section */
+.HPBookForm {
+  background-color: #1e1e1e;
+  min-height: 450px;
+  width: 350px;
+  padding: 30px;
+  color: white;
+  button {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--orange-color);
+    color: white;
+    font-size: 11px;
+    cursor: pointer;
+    border: none;
+    transition: 0.6s all;
+    letter-spacing: 2px;
+    &:hover {
+      background-color: #222222;
+      color: white;
+    }
+  }
+  .HPBookFormText {
+    display: flex;
+    flex-direction: column;
+    span:nth-child(1) {
+      letter-spacing: 2px;
+      font-size: 12px;
+      color: var(--orange-color);
+    }
+    span:nth-child(2) {
+      letter-spacing: 1px;
+      margin-top: 4px;
+      font-size: 22px;
+    }
+  }
+  .HPBookFormInputs {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    .HPBookFormInputsCheckIn,
+    .HPBookFormInputsCheckOut {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0px;
+      span {
+        margin-bottom: 10px;
+        color: var(--orange-color);
+      }
+      input {
+        padding: 10px;
+        background-color: #222222;
+        color: rgb(200, 200, 200);
+        border: 1px solid var(--orange-color);
+      }
+    }
+    .HPBookFormInputsGuests {
+      display: flex;
+      margin-top: 15px;
+      select {
+        background-color: #222222;
+        color: rgb(200, 200, 200);
+        border: 1px solid var(--orange-color);
+        padding: 15px 37px;
+      }
+      select:nth-child(2) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+/*#region Book Section Responsive*/
+
+@media only screen and (max-width: 1600px) {
+  .HPBook {
+    padding: 0px 180px;
+  }
+}
+@media only screen and (max-width: 1540px) {
+  .HPBook {
+    padding: 0px 150px;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .HPBook {
+    padding: 0px 100px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .HPBook {
+    padding: 0px 60px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .HPBook {
+    padding: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .HPBook {
+    padding: 0px 50px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .HPBook {
+    padding: 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .HPBook {
+    flex-direction: column;
+    padding: 50px 0px;
+  }
+  .HPBookText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .HPBookForm {
+    margin-top: 20px;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .HPBookForm {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .HPBookText {
+    font-family: sans-serif royalGate;
+    width: 400px;
+    .HPBookStars {
+      svg {
+        font-size: 25px;
+      }
+    }
+    svg {
+      font-size: 25px;
+    }
+    span {
+      font-size: 15px;
+    }
+  }
+  .HPBookForm {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .HPBookText {
+    width: 340px;
+    .HPBookStars {
+      svg {
+        font-size: 25px;
+      }
+    }
+    svg {
+      font-size: 25px;
+    }
+    span {
+      font-size: 15px;
+    }
+  }
+  .HPBookForm {
+    width: 340px;
+    .HPBookFormInputsGuests {
+      select {
+        padding: 15px 20px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .HPBookText {
+    width: 310px;
+    .HPBookStars {
+      svg {
+        font-size: 25px;
+      }
+    }
+    svg {
+      font-size: 25px;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+  .HPBookForm {
+    width: 310px;
+  }
+}
+/*#endregion Book Section Responsive*/

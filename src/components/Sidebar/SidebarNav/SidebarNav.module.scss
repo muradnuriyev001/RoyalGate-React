@@ -12,6 +12,7 @@ li {
   cursor: pointer;
   &:hover {
     color: var(--orange-color);
+    margin-left: 10px;
   }
 }
 .active {
