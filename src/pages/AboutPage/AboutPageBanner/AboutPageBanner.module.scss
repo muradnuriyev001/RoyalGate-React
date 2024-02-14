@@ -1,0 +1,105 @@
+.aboutBanner {
+  background-image: url("../../../assets/img/homePageBanner3.jpg");
+  height: 700px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif royalGate;
+  p {
+    color: var(--orange-color);
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+  }
+  h1 {
+    color: white;
+    letter-spacing: 15px;
+    font-size: 32px;
+    transform: scaleY(1.1);
+  }
+ a {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 900;
+    border: 3px solid var(--orange-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+      background-color: white;
+      color: var(--orange-color);
+    }
+  }
+}
+
+/*Responsive for About page banner */
+
+@media only screen and (max-width: 1280px) {
+  .aboutBanner {
+    p {
+      font-size: 40px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutBanner {
+    p {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 22px;
+      letter-spacing: 10px;
+    }
+   a {
+      font-size: 12px;
+      padding: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .aboutBanner {
+    p {
+      font-size: 25px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .aboutBanner {
+    p {
+      font-size: 18px;
+    }
+    h1 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .aboutBanner {
+    p {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-size: 14px;
+      letter-spacing: 5px;
+    }
+    button {
+      font-size: 11px;
+      padding: 15px;
+    }
+  }
+}

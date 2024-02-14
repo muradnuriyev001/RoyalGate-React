@@ -1,0 +1,258 @@
+.aboutHistory {
+  background-color: #1e1e1e;
+}
+
+.aboutOldHotel {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: center;
+  .oldHotelText {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 16px;
+      padding: 20px 0px;
+      color: var(--orange-color);
+    }
+    span {
+      color: white;
+      padding: 0px 105px;
+    }
+  }
+
+  .oldHotelImage {
+    img {
+      height: 700px;
+      width: 740px;
+    }
+  }
+}
+
+.aboutNewHotel {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  .newHotelText {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 16px;
+      padding: 20px 0px;
+      color: var(--orange-color);
+    }
+    span {
+      color: white;
+      padding: 0px 105px;
+    }
+  }
+  .newHotelImage {
+    img {
+      height: 700px;
+      width: 740px;
+    }
+  }
+}
+
+/*Responsive for About page History section */
+
+@media only screen and (max-width: 1700px) {
+  .aboutOldHotel {
+    .oldHotelImage {
+      img {
+        width: 680px;
+      }
+    }
+  }
+  .aboutNewHotel {
+    .newHotelImage {
+      img {
+        width: 680px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .aboutOldHotel {
+    .oldHotelImage {
+      img {
+        width: 630px;
+      }
+    }
+  }
+  .aboutNewHotel {
+    .newHotelImage {
+      img {
+        width: 630px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .aboutOldHotel {
+    .oldHotelImage {
+      img {
+        width: 550px;
+      }
+    }
+  }
+  .aboutNewHotel {
+    .newHotelImage {
+      img {
+        width: 550px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .aboutOldHotel {
+    .oldHotelText {
+      display: flex;
+      flex-direction: column;
+      span {
+        padding: 0px 50px;
+      }
+    }
+    .oldHotelImage {
+      img {
+        width: 500px;
+      }
+    }
+  }
+  .aboutNewHotel {
+    .newHotelText {
+      display: flex;
+      flex-direction: column;
+      span {
+        padding: 0px 50px;
+      }
+    }
+    .newHotelImage {
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .aboutOldHotel {
+    .oldHotelImage {
+      img {
+        width: 450px;
+      }
+    }
+  }
+  .aboutNewHotel {
+    .newHotelImage {
+      img {
+        width: 450px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .aboutOldHotel {
+    .oldHotelText {
+      display: flex;
+      flex-direction: column;
+      span {
+        padding: 0px 30px;
+      }
+    }
+    .oldHotelImage {
+      img {
+        width: 510px;
+      }
+    }
+  }
+  .aboutNewHotel {
+    .newHotelText {
+      display: flex;
+      flex-direction: column;
+      span {
+        padding: 0px 30px;
+      }
+    }
+    .newHotelImage {
+      img {
+        width: 510px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .aboutOldHotel {
+    .oldHotelImage {
+      img {
+        height: 600px;
+        width: 430px;
+      }
+    }
+  }
+  .aboutNewHotel {
+    .newHotelImage {
+      img {
+        height: 600px;
+        width: 430px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .aboutOldHotel {
+    .oldHotelText {
+      span {
+        font-size: 12px;
+      }
+    }
+    .oldHotelImage {
+      img {
+        height: 550px;
+        width: 350px;
+      }
+    }
+  }
+  .aboutNewHotel {
+    .newHotelText {
+      span {
+        font-size: 12px;
+      }
+    }
+    .newHotelImage {
+      img {
+        height: 550px;
+        width: 350px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutOldHotel {
+    flex-direction: column;
+    .oldHotelImage {
+      margin-top: 20px;
+      img {
+        height: 450px;
+        width: 100%;
+      }
+    }
+  }
+  .aboutNewHotel {
+    flex-direction: column;
+    .newHotelImage {
+      margin-top: 20px;
+      img {
+        height: 450px;
+        width: 100%;
+      }
+    }
+  }
+}
