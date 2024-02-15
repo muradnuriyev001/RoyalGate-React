@@ -1,0 +1,82 @@
+.contactBanner {
+  background-image: url("../../../assets/img/ContactPageBanner.jpg");
+  height: 700px;
+  background-position: center;
+  font-family: royalGate sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  span {
+    color: white;
+    font-size: 50px;
+  }
+
+  a {
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: 0.8s all;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+/* Responsive for contact page banner */
+
+@media only screen and (max-width: 860px) {
+  .contactBanner {
+    span {
+      font-size: 40px;
+    }
+    a {
+      padding: 15px 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .contactBanner {
+    span {
+      font-size: 30px;
+    }
+    a {
+      padding: 12px 22px;
+    }
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .contactBanner {
+    height: 600px;
+    span {
+      font-size: 25px;
+    }
+    a {
+      font-size: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .contactBanner {
+    height: 600px;
+    span {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    .contactBanner {
+      height: 550px;
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+}

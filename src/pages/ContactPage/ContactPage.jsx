@@ -1,8 +1,14 @@
-
+import ContactPageBook from "../HomePage/HomePageBook/HomePageBook";
+import ContactPageBanner from "./ContactPageBanner/ContactPageBanner";
+import ContactPageForm from "./ContactPageForm/ContactPageForm";
 const ContactPage = () => {
   return (
-    <div>ContactPage</div>
-  )
-}
+    <>
+      <ContactPageBanner />
+      <ContactPageForm />
+      <ContactPageBook />
+    </>
+  );
+};
 
-export default ContactPage
+export default ContactPage;

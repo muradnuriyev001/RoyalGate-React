@@ -1,0 +1,175 @@
+.contactForm {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 220px;
+}
+.df {
+  display: flex;
+  flex-direction: column;
+}
+.contactFormText {
+  line-height: 1.65;
+  h1 {
+    color: var(--orange-color);
+    margin-bottom: 10px;
+  }
+  p {
+    color: var(--gray-color);
+  }
+  span {
+    color: white;
+    font-size: 17px;
+  }
+  svg {
+    color: var(--orange-color);
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  .contactFormTextPhone,
+  .contactFormTextEmail,
+  .contactFormTextAddress {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contactFormReview {
+  h1 {
+    color: var(--orange-color);
+    margin-bottom: 5px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      margin: 5px 0px;
+      padding: 15px 5px;
+      width: 350px;
+      border: none;
+      background-color: #222222;
+      color: white;
+      border-bottom: 2px solid var(--orange-color);
+      &:focus {
+        outline: none;
+        border-bottom: 3px solid orange;
+        caret-color: orange;
+      }
+    }
+
+    textarea {
+      resize: none;
+      background-color: #222222;
+      border: none;
+      border-bottom: 2px solid var(--orange-color);
+      margin: 15px 0px;
+      padding: 15px 0px;
+      color: white;
+      &:focus {
+        border-color: orange;
+      }
+    }
+  }
+  .btn {
+    background-color: var(--orange-color);
+    padding: 15px;
+    transition: 0.6s all;
+    cursor: pointer;
+    margin-top: 15px;
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
+/*Responsive for contact page form */
+
+@media only screen and (max-width: 1750px) {
+  .contactForm {
+    padding: 100px 200px;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .contactForm {
+    padding: 100px 150px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .contactForm {
+    padding: 100px 110px;
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .contactForm {
+    padding: 100px 70px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .contactForm {
+    padding: 100px 30px;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .contactForm {
+    padding: 100px 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contactForm {
+    flex-direction: column;
+    align-items: start;
+    padding: 100px 0px;
+    padding-left: 100px;
+    .contactFormReview {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .contactForm {
+    padding: 100px 0px;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .contactForm {
+    padding: 100px 0px;
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contactForm {
+    padding: 100px 0px;
+    padding-left: 10px;
+  }
+
+  .contactFormText {
+    span {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  .contactFormReview {
+    h1 {
+      font-size: 25px;
+    }
+    form {
+      input {
+        width: 300px;
+      }
+    }
+  }
+}
