@@ -22,6 +22,8 @@ html {
   --gray-color: #878787;
   --orange-color: #b19a63;
   --sidebar-width: 20.9%;
+  --swiper-pagination-color: orange; /*changing default point color*/
+  --swiper-navigation-color: orange; /*changing default nav buttons color */
 }
 
 /* Scrollbar settings*/

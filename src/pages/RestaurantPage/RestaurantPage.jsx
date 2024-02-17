@@ -1,8 +1,13 @@
+import RestaurantPageBanner from "./RestaurantPageBanner/RestaurantPageBanner";
+import RestaurantPageInfo from "./RestaurantPageInfo/RestaurantPageInfo";
 
 const RestaurantPage = () => {
   return (
-    <div>RestaurantPage</div>
-  )
-}
+    <>
+      <RestaurantPageBanner />
+      <RestaurantPageInfo />
+    </>
+  );
+};
 
-export default RestaurantPage
+export default RestaurantPage;

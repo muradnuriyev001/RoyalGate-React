@@ -1,0 +1,104 @@
+.restaurantInfo {
+  min-height: 800px;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 300px;
+}
+.restaurantInfoHeader {
+  font-family: sans-serif royalGate;
+  .restaurantStars {
+    color: var(--orange-color);
+  }
+  .headerText {
+    h3 {
+      color: var(--orange-color);
+      font-size: 15px;
+      letter-spacing: 2px;
+      margin-top: 8px;
+    }
+    h1 {
+      color: white;
+      margin: 10px 0px;
+      letter-spacing: 2px;
+    }
+    .headerSpan {
+      color: var(--gray-color);
+      font-size: 11px;
+    }
+  }
+}
+
+.restaurantInfoMainText {
+  margin-top: 20px;
+  svg {
+    color: var(--orange-color);
+    font-size: 20px;
+  }
+  span {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .mealTimes {
+    margin: 20px 0px;
+    span {
+      font-size: 13px;
+      color: var(--gray-color);
+      margin-left: 5px;
+    }
+    .mealTime {
+      display: flex;
+      align-items: center;
+      margin: 10px 0px;
+    }
+  }
+  .rulesInfo {
+    h2 {
+      color: white;
+      font-size: 20px;
+      margin: 10px 0px;
+    }
+    p {
+      font-size: 13px;
+      color: var(--gray-color);
+    }
+  }
+}
+
+/*Responsive for Restaurant page info */
+
+@media only screen and (max-width: 1500px) {
+  .restaurantInfo {
+    padding: 0px 200px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .restaurantInfo {
+    padding: 0px 150px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .restaurantInfo {
+    padding: 0px 100px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .restaurantInfo {
+    padding: 0px 50px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 12px !important;
+  }
+  .restaurantInfo {
+    padding: 0px 20px;
+  }
+}
