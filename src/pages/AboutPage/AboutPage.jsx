@@ -2,12 +2,14 @@ import AboutPageFirstSection from "../HomePage/HomePageFirstSection/HomePageFirs
 import AboutPageOurServices from "../HomePage/HomePageOurServices/HomePageOurServices";
 import AboutPageBanner from "./AboutPageBanner/AboutPageBanner";
 import AboutPageHistory from "./AboutPageHistory/AboutPageHistory";
+import AboutPageAlbum from "./AboutPageAlbum/AboutPageAlbum";
 const AboutPage = () => {
   return (
     <>
       <AboutPageBanner />
       <AboutPageFirstSection />
       <AboutPageHistory />
+      <AboutPageAlbum/>
       <AboutPageOurServices />
     </>
   );

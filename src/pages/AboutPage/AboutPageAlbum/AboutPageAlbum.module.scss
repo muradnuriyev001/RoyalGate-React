@@ -1,0 +1,26 @@
+.sliderContent {
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+  .sliderHeader {
+    padding: 50px 0px;
+    text-align: center;
+    font-family: royalGate sans-serif;
+    color: var(--orange-color);
+  }
+  .slider {
+    width: 100%;
+    height: 100%;
+    --swiper-pagination-color: orange; //changing default point color
+    --swiper-navigation-color: orange; //changing default nav buttons color
+    img {
+      width: 100%;
+      height: 300px;
+      transition: 0.8s all;
+      cursor: zoom-in;
+      &:hover {
+        scale: 1.05;
+      }
+    }
+  }
+}
