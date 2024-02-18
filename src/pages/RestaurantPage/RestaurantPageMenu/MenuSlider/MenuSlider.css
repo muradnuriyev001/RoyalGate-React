@@ -9,7 +9,9 @@
 .swiper-slide:hover {
   color: orange;
 }
-
+.active-key {
+  color: orange;
+}
 @media only screen and (max-width: 520px) {
   .swiper-slide {
     font-size: 15px;

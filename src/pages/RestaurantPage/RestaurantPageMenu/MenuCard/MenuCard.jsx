@@ -1,13 +1,14 @@
 import c from "./MenuCard.module.scss";
-import { Starters } from "../MenuDB";
-const MenuCard = () => {
+
+const MenuCard = ({ meal }) => {
+  const { name, price, description } = meal;
   return (
     <div className={c.menuCard}>
       <div className={c.menuCardNamePrice}>
-        <h2>{Starters[1].name}</h2>
-        <span>{Starters[1].price}</span>
+        <h2>{name}</h2>
+        <span>{price}</span>
       </div>
-      <p className={c.menuCardDescription}>{Starters[1].description}</p>
+      <p className={c.menuCardDescription}>{description}</p>
     </div>
   );
 };

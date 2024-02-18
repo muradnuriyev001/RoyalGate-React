@@ -1,8 +1,14 @@
-import Menu from "./Menu/Menu";
-import MenuSlider from "./MenuSlider/MenuSlider";
+import { useState } from "react";
 import c from "./RestaurantPageMenu.module.scss";
 
+import Menu from "./Menu/Menu";
+import MenuSlider from "./MenuSlider/MenuSlider";
+
+import menuDb from "./MenuDB.json";
+
 const RestaurantPageMenu = () => {
+  const [activeKey, setActiveKey] = useState("Starters");
+  const activeMenu = menuDb[activeKey];
   return (
     <div className={c.restaurantMenu}>
       <div className={c.headerMenu}>
@@ -11,11 +17,11 @@ const RestaurantPageMenu = () => {
       </div>
 
       <div className={c.menuSlider}>
-        <MenuSlider />
+        <MenuSlider activeKey={activeKey} setActiveKey={setActiveKey} />
       </div>
 
       <div className={c.menu}>
-        <Menu />
+        <Menu activeMenu={activeMenu} />
       </div>
     </div>
   );

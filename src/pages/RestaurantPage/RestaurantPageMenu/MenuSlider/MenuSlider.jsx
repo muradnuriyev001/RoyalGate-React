@@ -1,6 +1,7 @@
+import menuDb from "../MenuDB.json";
+
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -10,7 +11,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-export default () => {
+export default ({ activeKey, setActiveKey }) => {
+  const menuKeys = Object.keys(menuDb);
+
+  const handleMenuClick = (e) => {
+    setActiveKey(e);
+  };
+
   return (
     <Swiper
       // install Swiper modules
@@ -27,12 +34,15 @@ export default () => {
         },
       }}
     >
-      <SwiperSlide>Starters</SwiperSlide>
-      <SwiperSlide>Mains</SwiperSlide>
-      <SwiperSlide>Salads</SwiperSlide>
-      <SwiperSlide>Wine</SwiperSlide>
-      <SwiperSlide>Breakfast</SwiperSlide>
-      <SwiperSlide>Dessert</SwiperSlide>
+      {menuKeys.map((menuKey, key) => (
+        <SwiperSlide
+          className={`${menuKey === activeKey && "active-key"} swiper-slide`}
+          onClick={() => handleMenuClick(menuKey)}
+          key={key}
+        >
+          {menuKey}
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
