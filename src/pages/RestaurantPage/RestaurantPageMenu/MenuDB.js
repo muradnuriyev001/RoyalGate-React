@@ -1,0 +1,203 @@
+export const Starters = [
+  {
+    name: "Mozzarella Dippers",
+    description: "Fried mozzarella sticks, marinara sauce",
+    price: "27$",
+  },
+
+  {
+    name: "Buffalo Wings",
+    description: "Spicy chicken wings, blue cheese sauce, carrot, celery",
+    price: "32$",
+  },
+  {
+    name: "Onion Rings",
+    description: "Fried onion rings, smoked aioli",
+    price: "27$",
+  },
+  {
+    name: "Chilli Con Carnes",
+    description: "Spicy ground beef, bacon, kidney beans",
+    price: "32$",
+  },
+  {
+    name: "Fried Jalapeno",
+    description: "Fried jalapeno pickles, cheddar sauce",
+    price: "42$",
+  },
+  {
+    name: "Potato Skins",
+    description: "Crispy potato skins; bacon & cheddar or vegetables",
+    price: "27$",
+  },
+];
+
+export const Mains = [
+  {
+    name: "Rusty’s Burgers",
+    description: "Smoked pulled beef ribs, bbq sauce, cheddar, crispy onion",
+    price: "27$",
+  },
+
+  {
+    name: "Cajun Fish Steak",
+    description: "Cajun spicied seabass, deep fried baby potatoes, side salad",
+    price: "23$",
+  },
+  {
+    name: "Southern Fried Chicken",
+    description: "Cajun coated chicken breast, fries and honey mustard",
+    price: "27$",
+  },
+  {
+    name: "Crab Cake",
+    description: "Breaded crab cakes, tartar sauce, apple and fennel salad",
+    price: "25$",
+  },
+  {
+    name: "Baby Back Ribs",
+    description: "Bbq glazed baby pork ribs, coleslaw, fries",
+    price: "35$",
+  },
+  {
+    name: "Smokehouse Combo",
+    description: "Smoked beef brisket, rib and sausage, coleslaw, cornbread",
+    price: "27$",
+  },
+];
+
+export const Salads = [
+  {
+    name: "Ceaser Salad",
+    description: "Romaine lettuce, croutons, parmigiano, Ceaser dressing.",
+    price: "17$",
+  },
+
+  {
+    name: "Waldorf Salad",
+    description: "Spicy chicken wings, blue cheese sauce, carrot, celery",
+    price: "22$",
+  },
+  {
+    name: "Quinoa & Avocado Salad",
+    description: "Fried onion rings, smoked aioli",
+    price: "17$",
+  },
+  {
+    name: "Grilled Salmon Salad",
+    description: "Spicy ground beef, bacon, kidney beans",
+    price: "15$",
+  },
+  {
+    name: "Chicken Cobb Salad",
+    description: "Fried jalapeno pickles, cheddar sauce",
+    price: "22$",
+  },
+  {
+    name: "Salad Chicken",
+    description: "Crispy potato skins; bacon & cheddar or vegetables",
+    price: "14$",
+  },
+];
+
+export const Wine = [
+  {
+    name: "Château d'Yquem 2011",
+    description: "Dessert Wine, Bordeaux, Graves, Sauternes",
+    price: "170$",
+  },
+
+  {
+    name: "Alvear Cream NV",
+    description: "Dessert, Fortified Wine, Andalucia",
+    price: "220$",
+  },
+  {
+    name: "Chateau D'yquem 1990",
+    description: "Dessert Wine, Bordeaux, Graves, Sauternes",
+    price: "170$",
+  },
+  {
+    name: "La Grande Année 2007",
+    description: "Rosé, Champagne",
+    price: "150$",
+  },
+  {
+    name: "Sine Qua Non 2012",
+    description: "Syrah, Shiraz & Blends, California",
+    price: "600$",
+  },
+  {
+    name: "W.S. Keyes Winery 2006",
+    description: "Merlot, California, Napa, Howell Mountain",
+    price: "520$",
+  },
+];
+
+export const Breakfast = [
+  {
+    name: "Egg Benedict",
+    description: "English muffin, beef, hollandaise sauce, poached egg.",
+    price: "55$",
+  },
+
+  {
+    name: "Texas Benedict",
+    description: "English muffin, short ribs, bbq sauce, poached egg.",
+    price: "60$",
+  },
+  {
+    name: "Rusty’s Omlette",
+    description: "Mozzarella, cheddar, caramelized onion, black beans.",
+    price: "35%",
+  },
+  {
+    name: "Salmon Bagel",
+    description: "Smoked salmon, cream cheese, dill, rocket, red onion.",
+    price: "35$",
+  },
+  {
+    name: "Breakfast Bagel",
+    description: "Chocolate, marshmallow, biscuit bar",
+    price: "30$",
+  },
+  {
+    name: "Rusty’s Pancake",
+    description: "Strawberry, white chocolate, dark chocolate, crispearls",
+    price: "40$",
+  },
+];
+
+export const Dessert = [
+  {
+    name: "Bourbon Pecan Pie",
+    description: "Bourbon pecan stuffed pie, vanilla ice-cream",
+    price: "45$",
+  },
+
+  {
+    name: "New York Cheesecake",
+    description: "Cheesecake, strawberry & lime salad",
+    price: "35$",
+  },
+  {
+    name: "Rocky Road",
+    description: "Chocolate, marshmallow, biscuit bar",
+    price: "35%",
+  },
+  {
+    name: "Rusty’s ice-cream",
+    description: "Vanilla, bourbon, cookie, chocolate ice-cream",
+    price: "20$",
+  },
+  {
+    name: "S’mores",
+    description: "Chocolate chip cookies, marshmallow, chocolate",
+    price: "30$",
+  },
+  {
+    name: "Apple & Pear Crumble",
+    description: "Caramelized pear and apple, oat crumble, vanilla ice-cream",
+    price: "40$",
+  },
+];

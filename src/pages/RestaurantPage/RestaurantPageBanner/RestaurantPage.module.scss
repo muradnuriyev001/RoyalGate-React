@@ -1,4 +1,5 @@
 .restaurantBanner {
+  height: 800px;
   img {
     width: 100%;
     height: 800px;
@@ -8,6 +9,7 @@
 
 @media only screen and (max-width: 800px) {
   .restaurantBanner {
+    height: 600px;
     img {
       height: 600px;
     }
@@ -16,6 +18,7 @@
 
 @media only screen and (max-width: 500px) {
   .restaurantBanner {
+    height: 400px;
     img {
       height: 400px;
     }

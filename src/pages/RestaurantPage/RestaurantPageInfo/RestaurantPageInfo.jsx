@@ -45,9 +45,7 @@ const RestaurantPageInfo = () => {
           </div>
           <div className={c.mealTime}>
             <TbClockHour3 />
-            <span>
-              Dinner: open from 6.30 pm, last order at 10.00 pm (daily)
-            </span>
+            <span>Dinner: 6.30 pm - 10.00 pm (daily)</span>
           </div>
         </div>
         <div className={c.rulesInfo}>
