@@ -7,8 +7,6 @@ import Footer from "../../components/Footer/Footer";
 import TopButton from "../../components/TopButton/TopButton";
 import Marquee from "../../components/Marquee/Marquee";
 import Map from "../../components/Map/Map";
-
-import ScrollToTop from "../../utils/scrollToTop";
 import Loader from "../../components/Loader/Loader";
 
 const Layout = () => {
@@ -18,6 +16,8 @@ const Layout = () => {
   const [loaderState, setLoaderState] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0); //scrolling to top on changing pathname
+
     setLoaderState(true);
     setTimeout(() => {
       setLoaderState(false);
@@ -26,7 +26,6 @@ const Layout = () => {
 
   return (
     <div className={c.layout}>
-      <ScrollToTop /> {/*Scrolling to top on changing route*/}
       {loaderState && <Loader />}
       <Sidebar />
       <div className={c.outlet}>
