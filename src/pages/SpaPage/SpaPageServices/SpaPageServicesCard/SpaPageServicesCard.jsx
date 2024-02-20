@@ -7,7 +7,7 @@ const SpaPageServicesCard = ({ heading, price, image }) => {
         <h2>{heading}</h2>
         <p>{price}</p>
       </div>
-      <img src={image} alt="" />
+      <img src={image} alt="" loading="lazy" />
     </div>
   );
 };

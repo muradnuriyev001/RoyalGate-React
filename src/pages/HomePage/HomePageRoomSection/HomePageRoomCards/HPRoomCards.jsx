@@ -11,7 +11,7 @@ const HPRoomCards = ({ roomImage, roomPrice, roomName }) => {
 
   return (
     <div onClick={goToContact} className={c.HPRoomCard}>
-      <img src={roomImage} draggable={false} alt="Room Image" />
+      <img src={roomImage} draggable={false} alt="Room Image" loading="lazy"/>
       <div className={c.HPRoomCardLayer}>
         <span className={c.HPRoomLayerText1}>{roomPrice}</span>
         <span className={c.HPRoomLayerText2}>{roomName}</span>

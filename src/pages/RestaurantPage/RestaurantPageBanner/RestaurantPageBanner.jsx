@@ -29,16 +29,16 @@ const RestaurantPageBanner = () => {
         slidesPerView={1}
       >
         <SwiperSlide>
-          <img src={restaurantImage1} alt="" />
+          <img src={restaurantImage1} alt="" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={restaurantImage2} alt="" />
+          <img src={restaurantImage2} alt="" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={restaurantImage3} alt="" />
+          <img src={restaurantImage3} alt="" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={restaurantImage4} alt="" />
+          <img src={restaurantImage4} alt="" loading="lazy" />
         </SwiperSlide>
       </Swiper>
     </div>
