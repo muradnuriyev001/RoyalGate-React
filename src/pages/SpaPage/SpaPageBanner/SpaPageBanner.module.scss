@@ -1,0 +1,26 @@
+.spaBanner {
+  height: 800px;
+  img {
+    height: 800px;
+    width: 100%;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .spaBanner {
+    height: 600px;
+    img {
+      height: 600px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .spaBanner {
+    height: 400px;
+    img {
+      height: 400px;
+    }
+  }
+}

@@ -30,9 +30,15 @@ const Layout = () => {
       <Sidebar />
       <div className={c.outlet}>
         <Outlet />
-        <Marquee />
-        <Map />
-        <Footer />
+        {["/", "/about", "/restaurant", "/spa-center", "/contact"].includes(
+          pathname
+        ) && (
+          <>
+            <Marquee />
+            <Map />
+            <Footer />
+          </>
+        )}
       </div>
       <TopButton />
     </div>

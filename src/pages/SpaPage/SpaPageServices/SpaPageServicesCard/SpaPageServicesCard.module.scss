@@ -1,0 +1,133 @@
+.spaServicesCard {
+  position: relative;
+  height: 450px;
+  width: 360px;
+  margin: 0px 20px;
+  .spaSerivcesCardText {
+    position: absolute;
+    background-color: #2e2d2d;
+    width: 100%;
+    padding: 10px;
+    z-index: 2;
+    color: white;
+    h2 {
+      font-size: 20px;
+      color: var(--orange-color);
+    }
+    p {
+      margin-top: 5px;
+    }
+  }
+  img {
+    height: 450px;
+    width: 360px;
+    background-position: center;
+    filter: grayscale(55%);
+  }
+}
+
+
+/*Responsive for SpaSerivcesCard*/
+@media only screen and (max-width: 1520px) {
+  .spaServicesCard {
+    height: 380px;
+    width: 320px;
+    img {
+      height: 380px;
+      width: 320px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .spaServicesCard {
+    height: 360px;
+    width: 280px;
+    img {
+      height: 360px;
+      width: 280px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .spaServicesCard {
+    height: 340px;
+    width: 260px;
+    img {
+      height: 340px;
+      width: 260px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .spaServicesCard {
+    height: 300px;
+    width: 230px;
+    img {
+      height: 300px;
+      width: 230px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .spaServicesCard {
+    height: 340px;
+    width: 280px;
+    img {
+      height: 340px;
+      width: 280px;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .spaServicesCard {
+    height: 320px;
+    width: 240px;
+    margin: 0px 10px;
+    img {
+      height: 320px;
+      width: 240px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .spaServicesCard {
+    height: 500px;
+    width: 400px;
+    margin: 20px 10px;
+
+    img {
+      height: 500px;
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .spaServicesCard {
+    height: 400px;
+    width: 350px;
+    margin: 20px 10px;
+
+    img {
+      height: 400px;
+      width: 350px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .spaServicesCard {
+    height: 350px;
+    width: 300px;
+    img {
+      height: 350px;
+      width: 300px;
+    }
+  }
+}
