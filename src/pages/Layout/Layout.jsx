@@ -19,8 +19,10 @@ const Layout = () => {
     window.scrollTo(0, 0); //scrolling to top on changing pathname
 
     setLoaderState(true);
+    document.body.style.overflow = "hidden"; //disabling scrolling on loader
     setTimeout(() => {
       setLoaderState(false);
+      document.body.style.overflow = "auto";
     }, 1000);
   }, [pathname]);
 

@@ -72,3 +72,29 @@
     position: absolute;
   }
 }
+
+/*Responsive for each room card*/
+
+@media only screen and (max-width: 1120px) {
+  .HPRoomCard {
+    margin: 10px;
+    height: 350px;
+    width: 240px;
+    img {
+      height: 350px;
+      width: 240px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .HPRoomCard {
+    margin: 20px;
+    height: 350px;
+    width: 250px;
+    img {
+      height: 350px;
+      width: 250px;
+    }
+  }
+}
