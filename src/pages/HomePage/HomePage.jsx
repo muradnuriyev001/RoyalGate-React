@@ -1,3 +1,4 @@
+import HotelVideo from "../../components/Videos/HotelVideo/HotelVideo";
 import c from "./HomePage.module.scss";
 import HomePageBanner from "./HomePageBanner/HomePageBanner";
 import HomePageBook from "./HomePageBook/HomePageBook";
@@ -10,9 +11,10 @@ const HomePage = () => {
     <div className={c.homePage}>
       <HomePageBanner />
       <HomePageFirstSection />
-      <HomePageRoomSection/>
-      <HomePageOurServices/>
-      <HomePageBook/>
+      <HomePageRoomSection />
+      <HotelVideo />
+      <HomePageOurServices />
+      <HomePageBook />
     </div>
   );
 };
