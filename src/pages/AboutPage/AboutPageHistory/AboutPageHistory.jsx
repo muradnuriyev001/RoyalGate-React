@@ -1,7 +1,7 @@
 import c from "./AboutPageHistory.module.scss";
 
-import oldHotelImage from "../../../assets/img/AboutPageOldHotel.png";
-import newHotelImage from "../../../assets/img/AboutPageNewHotel.jpg";
+import oldHotelImage from "../../../assets/img/AboutPics/AboutPageOldHotel.png";
+import newHotelImage from "../../../assets/img/AboutPics/AboutPageNewHotel.jpg";
 
 const AboutPageHistory = () => {
   return (
@@ -28,7 +28,7 @@ const AboutPageHistory = () => {
         </div>
 
         <div className={c.oldHotelImage}>
-          <img src={oldHotelImage} alt="" loading="lazy"/>
+          <img src={oldHotelImage} alt="" loading="lazy" />
         </div>
       </div>
 
@@ -58,7 +58,7 @@ const AboutPageHistory = () => {
         </div>
 
         <div className={c.newHotelImage}>
-          <img src={newHotelImage} alt="" loading="lazy"/>
+          <img src={newHotelImage} alt="" loading="lazy" />
         </div>
       </div>
     </div>

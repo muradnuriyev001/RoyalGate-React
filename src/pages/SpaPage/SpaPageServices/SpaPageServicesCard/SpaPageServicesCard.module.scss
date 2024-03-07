@@ -109,12 +109,9 @@
 
 @media only screen and (max-width: 450px) {
   .spaServicesCard {
-    height: 400px;
     width: 350px;
     margin: 20px 10px;
-
     img {
-      height: 400px;
       width: 350px;
     }
   }
@@ -122,10 +119,10 @@
 
 @media only screen and (max-width: 400px) {
   .spaServicesCard {
-    height: 350px;
+    height: 450px;
     width: 300px;
     img {
-      height: 350px;
+      height: 450px;
       width: 300px;
     }
   }

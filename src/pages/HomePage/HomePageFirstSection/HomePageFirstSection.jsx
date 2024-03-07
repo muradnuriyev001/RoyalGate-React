@@ -1,7 +1,7 @@
 import c from "./HomePageFirstSection.module.scss";
 import { IoMdStar } from "react-icons/io";
-import firstSectionImage1 from "../../../assets/img/firstSection/firstSection1.jpg";
-import firstSectionImage2 from "../../../assets/img/firstSection/firstSection2.jpg";
+import firstSectionImage1 from "../../../assets/img/HomePics/firstSection1.jpg";
+import firstSectionImage2 from "../../../assets/img/HomePics/firstSection2.jpg";
 
 const HomePageFirstSection = () => {
   return (
@@ -30,10 +30,10 @@ const HomePageFirstSection = () => {
       </div>
       <div className={c.hPFSectionImages}>
         <div className={c.hPFImage1}>
-          <img src={firstSectionImage1} alt="" loading="lazy"/>
+          <img src={firstSectionImage1} alt="" loading="lazy" draggable="false" />
         </div>
         <div className={c.hPFImage2}>
-          <img src={firstSectionImage2} alt="" loading="lazy"/>
+          <img src={firstSectionImage2} alt="" loading="lazy" draggable="false" />
         </div>
       </div>
     </div>
