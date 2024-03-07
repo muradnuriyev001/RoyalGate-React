@@ -15,8 +15,8 @@ const HomePageBanner = () => {
           <span className={c.bT1}>LUXURY HOTEL & BEST RESORT</span>
           <span className={c.bT2}>ENJOY THE LUXURY EXPERIENCE</span>
         </div>
-        <a href="#room-section" className={c.bannerButton}>
-          ROOMS & SUITES
+        <a href="#room-section">
+          <div className={c.bannerButton}>ROOMS & SUITES</div>
         </a>
       </div>
     </div>

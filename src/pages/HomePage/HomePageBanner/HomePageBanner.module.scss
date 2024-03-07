@@ -29,6 +29,7 @@
       }
     }
     .bannerButton {
+      display: inline-block;
       background-color: transparent;
       color: white;
       font-family: royalFont sans-serif;
@@ -36,6 +37,7 @@
       border: 2px solid rgb(181, 179, 179);
       font-weight: 700;
       transition: 0.5s all;
+      margin-top: 10px;
       &:hover {
         background-color: white;
         color: black;

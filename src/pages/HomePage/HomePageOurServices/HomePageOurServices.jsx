@@ -25,27 +25,27 @@ const HomePageOurServices = () => {
         <HomePageServiceCard
           serviceIcon={<FaParking />}
           serviceName="Parking Space"
-          serviceInfo="Fusce tincidunt nis ace park norttito sit amet space mus entue habitant."
+          serviceInfo="Convenient parking spots, ensuring peace of mind and easy access."
         />
         <HomePageServiceCard
           serviceIcon={<BiSolidBed />}
           serviceName="Room Service"
-          serviceInfo="We’ll pick up from airport while you comfy on your ride mus entue habitant."
+          serviceInfo="Delightful meals delivered to your room, enhancing your stay comfort."
         />
         <HomePageServiceCard
           serviceIcon={<FaSwimmingPool />}
           serviceName="Swimming Pool"
-          serviceInfo="We’ll pick up from airport while you comfy on your ride mus entue habitant."
+          serviceInfo="Tranquil oasis for relaxation, offering a refreshing escape during stays."
         />
         <HomePageServiceCard
           serviceIcon={<FaWifi />}
-          serviceName="Fibre Internet"
-          serviceInfo="We’ll pick up from airport while you comfy on your ride mus entue habitant."
+          serviceName="Fiber Internet"
+          serviceInfo="Seamless connectivity with high-speed fiber internet, ensuring rapid browsing."
         />
         <HomePageServiceCard
           serviceIcon={<GiMeal />}
           serviceName="Breakfast"
-          serviceInfo="We’ll pick up from airport while you comfy on your ride mus entue habitant."
+          serviceInfo="Gourmet delights await at our restaurant, promising unforgettable dining."
         />
       </div>
     </div>

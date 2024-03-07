@@ -33,9 +33,7 @@ const ContactPageForm = () => {
           <FaMapMarkerAlt />
           <div className={c.df}>
             <p>Address</p>
-            <span>
-              1616 Broadway NY, New York 10001 United States of America
-            </span>
+            <span>1616 Broadway NY, New York 10001 USA</span>
           </div>
         </div>
       </div>

@@ -148,6 +148,14 @@
     padding: 100px 0px;
     padding-left: 20px;
   }
+  .contactFormText {
+    span {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+  }
 }
 @media only screen and (max-width: 380px) {
   .contactForm {
