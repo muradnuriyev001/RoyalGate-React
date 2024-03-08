@@ -6,7 +6,7 @@ const NotFoundPage = () => {
 
   return (
     <div className={c.notFound}>
-      <span>Page Not Found</span>
+      <span>Oopss.. Page Not Found</span>
       <button onClick={goHome} className={c.backHome}>
         Back To Home
       </button>

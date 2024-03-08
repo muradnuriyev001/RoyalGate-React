@@ -19,8 +19,8 @@ function App() {
         <Route path="/restaurant" element={<RestaurantPage />} />
         <Route path="/spa-center" element={<SpaPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<NotFoundPage />} />
       </Route>
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
