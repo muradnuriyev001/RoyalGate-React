@@ -23,7 +23,7 @@ const Layout = () => {
     setTimeout(() => {
       setLoaderState(false);
       document.body.style.overflow = "auto";
-    }, 1000);
+    }, 500);
   }, [pathname]);
 
   return (

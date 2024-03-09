@@ -11,6 +11,7 @@
   span {
     color: white;
     font-size: 50px;
+    animation: fadeIn 3s ease-in-out;
   }
 
   a {
@@ -20,7 +21,8 @@
     padding: 20px 30px;
     margin-top: 20px;
     font-size: 20px;
-    transition: 0.8s all;
+    transition: 1s all;
+    animation: fadeIn 2s ease-in-out;
     &:hover {
       background-color: white;
       color: black;
@@ -79,5 +81,15 @@
         font-size: 18px;
       }
     }
+  }
+}
+
+/*Animations*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

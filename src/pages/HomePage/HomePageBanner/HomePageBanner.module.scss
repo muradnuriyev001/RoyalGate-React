@@ -20,15 +20,19 @@
       font-family: royalFont sans-serif;
       letter-spacing: 10px;
       padding: 25px 0px;
+      overflow: hidden;
       .bT1 {
         font-size: 22px;
+        animation: slideInLeft 4s;
       }
       .bT2 {
         font-size: 50px;
         padding-top: 20px;
+        animation: slideInRight 4s;
       }
     }
     .bannerButton {
+      animation: scaleAndFadeIn 2s;
       display: inline-block;
       background-color: transparent;
       color: white;
@@ -60,5 +64,40 @@
   }
   .bannerButton {
     padding: 14px 20px !important;
+  }
+}
+
+/*Animatons*/
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleAndFadeIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
