@@ -50,25 +50,25 @@ const AboutPageAlbum = () => {
           }}
         >
           <SwiperSlide>
-            <img src={hotelImage1} alt="" loading="lazy" />
+            <img src={hotelImage1} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={hotelImage2} alt="" loading="lazy" />
+            <img src={hotelImage2} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={hotelImage3} alt="" loading="lazy" />
+            <img src={hotelImage3} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={hotelImage4} alt="" loading="lazy" />
+            <img src={hotelImage4} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={hotelImage5} alt="" loading="lazy" />
+            <img src={hotelImage5} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={hotelImage6} alt="" loading="lazy" />
+            <img src={hotelImage6} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={hotelImage7} alt="" loading="lazy" />
+            <img src={hotelImage7} alt="" />
           </SwiperSlide>
         </Swiper>
       </div>

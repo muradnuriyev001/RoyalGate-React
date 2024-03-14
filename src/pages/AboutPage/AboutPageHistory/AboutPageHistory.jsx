@@ -28,7 +28,7 @@ const AboutPageHistory = () => {
         </div>
 
         <div className={c.oldHotelImage}>
-          <img src={oldHotelImage} alt="" loading="lazy" />
+          <img src={oldHotelImage} alt=""/>
         </div>
       </div>
 
@@ -58,7 +58,7 @@ const AboutPageHistory = () => {
         </div>
 
         <div className={c.newHotelImage}>
-          <img src={newHotelImage} alt="" loading="lazy" />
+          <img src={newHotelImage} alt=""  />
         </div>
       </div>
     </div>

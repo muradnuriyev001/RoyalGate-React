@@ -30,10 +30,10 @@ const HomePageFirstSection = () => {
       </div>
       <div className={c.hPFSectionImages}>
         <div className={c.hPFImage1}>
-          <img src={firstSectionImage1} alt="" loading="lazy" draggable="false" />
+          <img src={firstSectionImage1} alt=""  draggable="false" />
         </div>
         <div className={c.hPFImage2}>
-          <img src={firstSectionImage2} alt="" loading="lazy" draggable="false" />
+          <img src={firstSectionImage2} alt=""  draggable="false" />
         </div>
       </div>
     </div>

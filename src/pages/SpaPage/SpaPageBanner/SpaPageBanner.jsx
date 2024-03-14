@@ -30,22 +30,22 @@ const SpaPageBanner = () => {
         slidesPerView={1}
       >
         <SwiperSlide>
-          <img src={spaImage1} alt="" loading="lazy" />
+          <img src={spaImage1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={spaImage2} alt="" loading="lazy" />
+          <img src={spaImage2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={spaImage3} alt="" loading="lazy" />
+          <img src={spaImage3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={spaImage4} alt="" loading="lazy" />
+          <img src={spaImage4} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={spaImage5} alt="" loading="lazy" />
+          <img src={spaImage5} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={spaImage6} alt="" loading="lazy" />
+          <img src={spaImage6} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
