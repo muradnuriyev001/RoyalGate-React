@@ -4,10 +4,27 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { TiStar } from "react-icons/ti";
 import { IoIosCheckmark } from "react-icons/io";
 
+import { motion } from "framer-motion";
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
 const HomePageBook = () => {
   return (
-    <div className={c.HPBook}>
-      <div className={c.HPBookText}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.3, once: true }}
+      className={c.HPBook}
+    >
+      <motion.div variants={Animation} custom={0.4} className={c.HPBookText}>
         <div className={c.HPBookStars}>
           <TiStar />
           <TiStar />
@@ -30,9 +47,9 @@ const HomePageBook = () => {
           <IoIosCheckmark />
           <span>Call us, it's tool-free</span>
         </div>
-      </div>
+      </motion.div>
 
-      <div className={c.HPBookForm}>
+      <motion.div variants={Animation} custom={0.4} className={c.HPBookForm}>
         <div className={c.HPBookFormText}>
           <span>ROOMS & SUITES</span>
           <span>Hotel Booking Form</span>
@@ -66,8 +83,8 @@ const HomePageBook = () => {
           </div>
           <button>CHECK AVAILABILITY</button>
         </form>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

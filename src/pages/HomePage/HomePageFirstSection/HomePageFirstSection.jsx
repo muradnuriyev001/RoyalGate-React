@@ -3,10 +3,29 @@ import { IoMdStar } from "react-icons/io";
 import firstSectionImage1 from "../../../assets/img/HomePics/firstSection1.jpg";
 import firstSectionImage2 from "../../../assets/img/HomePics/firstSection2.jpg";
 
+import { motion } from "framer-motion";
+
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 1 },
+  },
+};
+
 const HomePageFirstSection = () => {
   return (
-    <div className={c.hPFSection}>
-      <div className={c.hPFSectionContent}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.5, once: true }}
+      className={c.hPFSection}
+    >
+      <motion.div variants={Animation} className={c.hPFSectionContent}>
         <div className={c.hPFSectionStars}>
           <IoMdStar />
           <IoMdStar />
@@ -27,16 +46,16 @@ const HomePageFirstSection = () => {
             mus nellentesque habitant morbine.
           </span>
         </div>
-      </div>
-      <div className={c.hPFSectionImages}>
+      </motion.div>
+      <motion.div variants={Animation} className={c.hPFSectionImages}>
         <div className={c.hPFImage1}>
-          <img src={firstSectionImage1} alt=""  draggable="false" />
+          <img src={firstSectionImage1} alt="" draggable="false" />
         </div>
         <div className={c.hPFImage2}>
-          <img src={firstSectionImage2} alt=""  draggable="false" />
+          <img src={firstSectionImage2} alt="" draggable="false" />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

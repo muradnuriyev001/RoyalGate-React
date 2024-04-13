@@ -2,11 +2,31 @@ import c from "./RestaurantPageInfo.module.scss";
 
 import { IoMdStar } from "react-icons/io";
 import { TbClockHour3 } from "react-icons/tb";
-
+import { motion } from "framer-motion";
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
 const RestaurantPageInfo = () => {
   return (
-    <div className={c.restaurantInfo}>
-      <div className={c.restaurantInfoHeader}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.3, once: true }}
+      className={c.restaurantInfo}
+    >
+      <motion.div
+        variants={Animation}
+        custom={0.5}
+        className={c.restaurantInfoHeader}
+      >
         <div className={c.restaurantStars}>
           <IoMdStar />
           <IoMdStar />
@@ -30,9 +50,13 @@ const RestaurantPageInfo = () => {
             culinary treasures.
           </span>
         </div>
-      </div>
+      </motion.div>
 
-      <div className={c.restaurantInfoMainText}>
+      <motion.div
+        variants={Animation}
+        custom={0.7}
+        className={c.restaurantInfoMainText}
+      >
         <span>Hours</span>
         <div className={c.mealTimes}>
           <div className={c.mealTime}>
@@ -48,14 +72,14 @@ const RestaurantPageInfo = () => {
             <span>Dinner: 6.30 pm - 10.00 pm (daily)</span>
           </div>
         </div>
-        <div className={c.rulesInfo}>
+        <motion.div variants={Animation} custom={0.9} className={c.rulesInfo}>
           <h2>Dress Code</h2>
           <p>Smart casual (no shorts, hats, or sandals permitted)</p>
           <h2>Terrace</h2>
           <p>Open for drinks only</p>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 

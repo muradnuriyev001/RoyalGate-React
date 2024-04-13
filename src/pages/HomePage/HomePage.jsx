@@ -1,5 +1,4 @@
 import HotelVideo from "../../components/Videos/HotelVideo/HotelVideo";
-import c from "./HomePage.module.scss";
 import HomePageBanner from "./HomePageBanner/HomePageBanner";
 import HomePageBook from "./HomePageBook/HomePageBook";
 import HomePageFirstSection from "./HomePageFirstSection/HomePageFirstSection";
@@ -9,14 +8,14 @@ import usePageTitle from "../../hooks/usePageTitle";
 const HomePage = () => {
   usePageTitle("Royal Gate | Home");
   return (
-    <div className={c.homePage}>
+    <>
       <HomePageBanner />
       <HomePageFirstSection />
       <HomePageRoomSection />
       <HotelVideo />
       <HomePageOurServices />
       <HomePageBook />
-    </div>
+    </>
   );
 };
 

@@ -8,15 +8,41 @@ import { FaSwimmingPool } from "react-icons/fa";
 import { FaWifi } from "react-icons/fa";
 import { GiMeal } from "react-icons/gi";
 
+import { motion } from "framer-motion";
+
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
 const HomePageOurServices = () => {
   return (
-    <div className={c.hPServices}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.5, once: true }}
+      className={c.hPServices}
+    >
       <div className={c.hPServicesText}>
-        <span>OUR SERVICES</span>
-        <span>Hotel Facilities</span>
+        <motion.span variants={Animation} custom={0.3}>
+          OUR SERVICES
+        </motion.span>
+        <motion.span variants={Animation} custom={0.4}>
+          Hotel Facilities
+        </motion.span>
       </div>
 
-      <div className={c.hPServicesCards}>
+      <motion.div
+        variants={Animation}
+        custom={0.5}
+        className={c.hPServicesCards}
+      >
         <HomePageServiceCard
           serviceIcon={<GiSchoolBag />}
           serviceName="Pick Up & Drop"
@@ -47,8 +73,8 @@ const HomePageOurServices = () => {
           serviceName="Breakfast"
           serviceInfo="Gourmet delights await at our restaurant, promising unforgettable dining."
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

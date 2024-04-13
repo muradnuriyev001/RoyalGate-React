@@ -3,15 +3,45 @@ import c from "./HomePageRoomSection.module.scss";
 import RoomImage1 from "../../../assets/img/RoomSection/1.jpg";
 import RoomImage2 from "../../../assets/img/RoomSection/2.jpg";
 import RoomImage3 from "../../../assets/img/RoomSection/3.jpg";
+import { motion } from "framer-motion";
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
 
 const HomePageRoomSection = () => {
   return (
-    <div id="room-section" className={c.hPRoomSection}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.3, once: true }}
+      id="room-section"
+      className={c.hPRoomSection}
+    >
       <div className={c.hPRoomText}>
-        <span className={c.hPRoomText1}>ROYAL GATE LUXURY HOTEL</span>
-        <span className={c.hPRoomText2}>Rooms & Suites</span>
+        <motion.span
+          variants={Animation}
+          custom={0.4}
+          className={c.hPRoomText1}
+        >
+          ROYAL GATE LUXURY HOTEL
+        </motion.span>
+        <motion.span
+          variants={Animation}
+          custom={0.5}
+          className={c.hPRoomText2}
+        >
+          Rooms & Suites
+        </motion.span>
       </div>
-      <div className={c.hPRoomCards}>
+      <motion.div variants={Animation} custom={0.6} className={c.hPRoomCards}>
         <HPRoomCards
           roomImage={RoomImage1}
           roomPrice="190$ / Night"
@@ -42,8 +72,8 @@ const HomePageRoomSection = () => {
           roomPrice="990$ / Night"
           roomName="Royal Room"
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
