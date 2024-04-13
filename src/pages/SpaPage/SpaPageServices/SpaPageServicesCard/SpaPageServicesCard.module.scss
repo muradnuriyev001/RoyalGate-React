@@ -9,13 +9,29 @@
     width: 100%;
     padding: 10px;
     z-index: 1;
+    bottom: 0;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     h2 {
       font-size: 20px;
       color: var(--orange-color);
     }
     p {
-      margin-top: 5px;
+      margin: 10px 0px;
+    }
+    a {
+      text-decoration: none;
+      color: var(--white-color);
+      border-radius: 3px;
+      letter-spacing: 1px;
+      padding: 10px 20px;
+      border: 1px solid var(--orange-color);
+      transition: 0.3s all;
+      &:hover {
+        background-color: var(--orange-color);
+      }
     }
   }
   img {

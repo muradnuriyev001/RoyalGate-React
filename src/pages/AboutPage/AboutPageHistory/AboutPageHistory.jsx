@@ -3,13 +3,34 @@ import c from "./AboutPageHistory.module.scss";
 import oldHotelImage from "../../../assets/img/AboutPics/AboutPageOldHotel.png";
 import newHotelImage from "../../../assets/img/AboutPics/AboutPageNewHotel.jpg";
 
+import { motion } from "framer-motion";
+const Animation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 1 },
+  }),
+};
+
 const AboutPageHistory = () => {
   return (
-    <div id="history-section" className={c.aboutHistory}>
-      <div className={c.aboutOldHotel}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.4, once: true }}
+      id="history-section"
+      className={c.aboutHistory}
+    >
+      <motion.div variants={Animation} custom={0.6} className={c.aboutOldHotel}>
         <div className={c.oldHotelText}>
-          <h1>"Where History Meets Hospitality"</h1>
-          <span>
+          <motion.h1 variants={Animation} custom={0.7}>
+            "Where History Meets Hospitality"
+          </motion.h1>
+          <motion.span variants={Animation} custom={0.8}>
             Welcome to Royal Gate Hotel, where timeless elegance meets modern
             luxury. Nestled in the heart of the bustling city, our historic
             establishment has been a beacon of hospitality since its
@@ -24,18 +45,20 @@ const AboutPageHistory = () => {
             to ensure a restful stay. Whether you're here for business or
             leisure, our attentive staff is dedicated to providing unparalleled
             service to make your experience truly unforgettable.
-          </span>
+          </motion.span>
         </div>
 
         <div className={c.oldHotelImage}>
-          <img src={oldHotelImage} alt=""/>
+          <img src={oldHotelImage} alt="" />
         </div>
-      </div>
+      </motion.div>
 
-      <div className={c.aboutNewHotel}>
+      <motion.div variants={Animation} custom={1.5} className={c.aboutNewHotel}>
         <div className={c.newHotelText}>
-          <h1>"Discover Modern Luxury."</h1>
-          <span>
+          <motion.h1 variants={Animation} custom={1.6}>
+            "Discover Modern Luxury."
+          </motion.h1>
+          <motion.span variants={Animation} custom={1.7}>
             Indulge your palate at our renowned restaurant, where culinary
             delights crafted from the finest ingredients await.
             <br />
@@ -54,14 +77,14 @@ const AboutPageHistory = () => {
             <br />
             Experience the timeless allure of Royal Gate Hotel, where every
             moment is infused with elegance and grace.
-          </span>
+          </motion.span>
         </div>
 
         <div className={c.newHotelImage}>
-          <img src={newHotelImage} alt=""  />
+          <img src={newHotelImage} alt="" />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

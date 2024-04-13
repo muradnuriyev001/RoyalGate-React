@@ -22,7 +22,7 @@ const HomePageFirstSection = () => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.5, once: true }}
+      viewport={{ amount: 0.2, once: true }}
       className={c.hPFSection}
     >
       <motion.div variants={Animation} className={c.hPFSectionContent}>

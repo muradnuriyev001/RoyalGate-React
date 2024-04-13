@@ -41,17 +41,17 @@ const SpaPageServices = () => {
       >
         <SpaPageServicesCard
           heading="Fitness"
-          price="49$ / week"
+          price="$39 / week"
           image={spaCardImage1}
         />
         <SpaPageServicesCard
-          heading="Fitness / Pool"
-          price="59$ / week"
+          heading="Pool / Spa"
+          price="$59 / week"
           image={spaCardImage2}
         />
         <SpaPageServicesCard
-          heading="Fitness / Pool / Spa"
-          price="99$ / week"
+          heading="All in one"
+          price="$99 / week"
           image={spaCardImage3}
         />
       </motion.div>
