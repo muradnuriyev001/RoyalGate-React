@@ -5,8 +5,9 @@ import HomePageBook from "./HomePageBook/HomePageBook";
 import HomePageFirstSection from "./HomePageFirstSection/HomePageFirstSection";
 import HomePageOurServices from "./HomePageOurServices/HomePageOurServices";
 import HomePageRoomSection from "./HomePageRoomSection/HomePageRoomSection";
-
+import usePageTitle from "../../hooks/usePageTitle";
 const HomePage = () => {
+  usePageTitle("Royal Gate | Home");
   return (
     <div className={c.homePage}>
       <HomePageBanner />

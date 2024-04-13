@@ -8,9 +8,12 @@
   align-items: center;
   justify-content: center;
   filter: grayscale(0.1);
-  span {
+  h1 {
     color: white;
-    font-size: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
     animation: fadeIn 3s ease-in-out;
   }
 
@@ -18,7 +21,7 @@
     border: 2px solid white;
     text-decoration: none;
     color: white;
-    padding: 20px 30px;
+    padding: 15px 25px;
     margin-top: 20px;
     font-size: 20px;
     transition: 1s all;

@@ -98,6 +98,9 @@
         color: var(--orange-color);
       }
       input {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
         padding: 10px;
         background-color: #222222;
         color: rgb(200, 200, 200);

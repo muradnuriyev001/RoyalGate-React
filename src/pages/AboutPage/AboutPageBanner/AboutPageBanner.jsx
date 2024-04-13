@@ -2,7 +2,7 @@ import c from "./AboutPageBanner.module.scss";
 const AboutPageBanner = () => {
   return (
     <div className={c.aboutBanner}>
-      <p>"Royal Gate Hotel: Where Luxury Awaits."</p>
+      <h1>Royal Gate Hotel: Where Luxury Awaits.</h1>
       <a href="#history-section">Explore Our History!</a>
     </div>
   );

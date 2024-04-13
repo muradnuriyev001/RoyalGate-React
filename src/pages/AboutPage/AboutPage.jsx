@@ -3,13 +3,15 @@ import AboutPageOurServices from "../HomePage/HomePageOurServices/HomePageOurSer
 import AboutPageBanner from "./AboutPageBanner/AboutPageBanner";
 import AboutPageHistory from "./AboutPageHistory/AboutPageHistory";
 import AboutPageAlbum from "./AboutPageAlbum/AboutPageAlbum";
+import usePageTitle from "../../hooks/usePageTitle";
 const AboutPage = () => {
+  usePageTitle("Royal Gate | About");
   return (
     <>
       <AboutPageBanner />
       <AboutPageFirstSection />
       <AboutPageHistory />
-      <AboutPageAlbum/>
+      <AboutPageAlbum />
       <AboutPageOurServices />
     </>
   );

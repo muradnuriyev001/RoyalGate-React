@@ -11,8 +11,7 @@ const Footer = () => {
           <span>Royal Gate Hotel</span>
           <span>
             Welcome to the best five-star deluxe hotel in New York. Hotel
-            elementum sesue the aucan ivestane aliquam usto in the sapien
-            rutrum.
+            elementum sesue the aucan ivestane aliquam usto.
           </span>
           <select name="" id="">
             <option value="English">English</option>
