@@ -16,6 +16,15 @@ const Animation = {
   }),
 };
 
+const roomData = [
+  { image: RoomImage1, price: "190$ / Night", name: "Junior Suite" },
+  { image: RoomImage3, price: "290$ / Night", name: "Family Suite" },
+  { image: RoomImage2, price: "390$ / Night", name: "Double Suite" },
+  { image: RoomImage1, price: "490$ / Night", name: "Deluxe Suite" },
+  { image: RoomImage2, price: "590$ / Night", name: "King's Suite" },
+  { image: RoomImage3, price: "990$ / Night", name: "Royal Suite" },
+];
+
 const HomePageRoomSection = () => {
   return (
     <motion.div
@@ -42,36 +51,14 @@ const HomePageRoomSection = () => {
         </motion.span>
       </div>
       <motion.div variants={Animation} custom={0.6} className={c.hPRoomCards}>
-        <HPRoomCards
-          roomImage={RoomImage1}
-          roomPrice="190$ / Night"
-          roomName="Junior Suite"
-        />
-        <HPRoomCards
-          roomImage={RoomImage3}
-          roomPrice="290$ / Night"
-          roomName="Family Suite"
-        />
-        <HPRoomCards
-          roomImage={RoomImage2}
-          roomPrice="390$ / Night"
-          roomName="Double Room"
-        />
-        <HPRoomCards
-          roomImage={RoomImage1}
-          roomPrice="490$ / Night"
-          roomName="Deluxe Room"
-        />
-        <HPRoomCards
-          roomImage={RoomImage2}
-          roomPrice="590$ / Night"
-          roomName="King's Room"
-        />
-        <HPRoomCards
-          roomImage={RoomImage3}
-          roomPrice="990$ / Night"
-          roomName="Royal Room"
-        />
+        {roomData.map((room, i) => (
+          <HPRoomCards
+            key={i}
+            roomImage={room.image}
+            roomName={room.name}
+            roomPrice={room.price}
+          />
+        ))}
       </motion.div>
     </motion.div>
   );

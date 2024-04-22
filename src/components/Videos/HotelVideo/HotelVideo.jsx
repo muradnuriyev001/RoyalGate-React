@@ -5,7 +5,7 @@ const HotelVideo = () => {
         style={{ display: "block", filter: "grayscale(.15)" }}
         width="100%"
         height="680"
-        src="https://www.youtube.com/embed/z8h3jxSOL3o?si=LdN6J3XN8C96JbfB"
+        src="https://www.youtube.com/embed/ABfLMCcBlJ4?si=Xup71xZ6vMvkd7Zu"
         title="Royal Gate"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

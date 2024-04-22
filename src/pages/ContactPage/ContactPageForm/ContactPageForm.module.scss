@@ -1,9 +1,11 @@
 .contactForm {
   background-color: #222222;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   padding: 100px 220px;
+  border: 1px solid var(--orange-color);
+  border-width: 0px 0px 1px 0px;
 }
 .df {
   display: flex;
@@ -19,6 +21,7 @@
     color: var(--gray-color);
   }
   span {
+    margin-right: 10px;
     color: white;
     font-size: 17px;
   }

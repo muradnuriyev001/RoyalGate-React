@@ -7,13 +7,10 @@
   &:hover {
     img {
       filter: blur(4px);
-    }
-    .HPRoomCardLayer {
-      transition: 1s all;
+      transition: 0.5s all;
     }
     .HPRoomLayerIcons {
       display: flex;
-      transition: 1s all;
       .HPRoomLayerIcon {
         font-size: 22px;
         margin: 2px 5px;
