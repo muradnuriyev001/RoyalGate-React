@@ -34,9 +34,7 @@ const Footer = () => {
         <div className={c.firstLayerContact}>
           <div className={c.contactText}>
             <span>Contact</span>
-            <span>
-              1616 Broadway NY, New York 10001 United States of America
-            </span>
+            <span>Neftçilər Prospekti, Baku 1000, Azerbaijan</span>
           </div>
 
           <div className={c.contactPhone}>
@@ -52,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={c.footerSecondLayer}>
-        © Copyright 2024 by Murad Nuriyev
+        © Copyright 2025 by Murad Nuriyev
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
 const Map = () => {
-  
   return (
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.0621365787!2d-74.30931950262287!3d40.6970193096768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2saz!4v1707943872807!5m2!1str!2saz"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24313.618064899554!2d49.851476!3d40.377194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d0855555555%3A0xa3d525969a9e0b1b!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2saz!4v1707943872807!5m2!1sen!2saz"
       width="100%"
       height="450"
       style={{ border: 0 }}
